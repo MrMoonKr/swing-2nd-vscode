@@ -1,0 +1,197 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ToolbarFrame1",
+            "request": "launch",
+            "mainClass": "com.example.ToolbarFrame1",
+            "projectName": "ch01"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "chapter-01",
+            "request": "launch",
+            "mainClass": "org.lwjglb.HelloWorld",
+            "projectName": "chapter-01",
+            "cwd": "${workspaceFolder}/chapter-01"
+        },
+        {
+            "type": "java",
+            "name": "chapter-02",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-02",
+            "cwd": "${workspaceFolder}/chapter-02"
+        },
+        {
+            "type": "java",
+            "name": "chapter-03",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-03",
+            "cwd": "${workspaceFolder}/chapter-03"
+        },
+        {
+            "type": "java",
+            "name": "chapter-04",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-04",
+            "cwd": "${workspaceFolder}/chapter-04"
+        },
+        {
+            "type": "java",
+            "name": "chapter-05",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-05",
+            "cwd": "${workspaceFolder}/chapter-05"
+        },
+        {
+            "type": "java",
+            "name": "chapter-06",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-06",
+            "cwd": "${workspaceFolder}/chapter-06"
+        },
+        {
+            "type": "java",
+            "name": "chapter-07",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-07",
+            "cwd": "${workspaceFolder}/chapter-07"
+        },
+        {
+            "type": "java",
+            "name": "chapter-08",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-08",
+            "cwd": "${workspaceFolder}/chapter-08"
+        },
+        {
+            "type": "java",
+            "name": "chapter-09",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-09",
+            "cwd": "${workspaceFolder}/chapter-09"
+        },
+        {
+            "type": "java",
+            "name": "chapter-10",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-10",
+            "cwd": "${workspaceFolder}/chapter-10"
+        },
+        {
+            "type": "java",
+            "name": "chapter-11",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-11",
+            "cwd": "${workspaceFolder}/chapter-11"
+        },
+        {
+            "type": "java",
+            "name": "chapter-12",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-12",
+            "cwd": "${workspaceFolder}/chapter-12"
+        },
+        {
+            "type": "java",
+            "name": "chapter-13",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-13",
+            "cwd": "${workspaceFolder}/chapter-13"
+        },
+        {
+            "type": "java",
+            "name": "chapter-14",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-14",
+            "cwd": "${workspaceFolder}/chapter-14"
+        },
+        {
+            "type": "java",
+            "name": "chapter-15",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-15",
+            "cwd": "${workspaceFolder}/chapter-15"
+        },
+        {
+            "type": "java",
+            "name": "chapter-16",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-16",
+            "cwd": "${workspaceFolder}/chapter-16"
+        },
+        {
+            "type": "java",
+            "name": "chapter-17",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-17",
+            "cwd": "${workspaceFolder}/chapter-17"
+        },
+        {
+            "type": "java",
+            "name": "chapter-18",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-18",
+            "cwd": "${workspaceFolder}/chapter-18"
+        },
+        {
+            "type": "java",
+            "name": "chapter-19",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-19",
+            "cwd": "${workspaceFolder}/chapter-19"
+        },
+        {
+            "type": "java",
+            "name": "chapter-20",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-20",
+            "cwd": "${workspaceFolder}/chapter-20"
+        },
+        {
+            "type": "java",
+            "name": "chapter-21",
+            "request": "launch",
+            "mainClass": "org.lwjglb.game.Main",
+            "projectName": "chapter-21",
+            "cwd": "${workspaceFolder}/chapter-21"
+        },
+        {
+            "type": "java",
+            "name": "chapter-22",
+            "request": "launch",
+            "mainClass": "org.lwjglb.Main",
+            "projectName": "chapter-22",
+            "cwd": "${workspaceFolder}/chapter-22"
+        }
+    ]
+}
