@@ -20,7 +20,6 @@ import java.awt.*;
 import java.io.*;
 import java.util.*;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.tree.*;
 import javax.swing.border.*;
@@ -34,24 +33,6 @@ public class DirTree1 extends JFrame {
     public static final ImageIcon ICON_DISK = IconLoader.loadIcon( "icons/disk.gif" );
     public static final ImageIcon ICON_FOLDER = IconLoader.loadIcon( "icons/folder.gif" );
     public static final ImageIcon ICON_EXPANDEDFOLDER = IconLoader.loadIcon( "icons/expandedfolder.gif" );
-
-    public static ImageIcon loadIcon( String resourcePath ) {
-        try {
-            ClassLoader classLoader = DirTree1.class.getClassLoader();
-            InputStream inputStream = classLoader.getResourceAsStream( resourcePath );
-
-            if ( inputStream == null ) {
-                throw new IllegalArgumentException( "Resource not found: " + resourcePath );
-            }
-
-            Image image = ImageIO.read( inputStream );
-            return new ImageIcon( image );
-        } catch ( Exception e ) {
-            // TODO: handle exception
-            e.printStackTrace();
-            return null;
-        }
-    }
 
     protected JTree m_tree;
     protected DefaultTreeModel m_model;

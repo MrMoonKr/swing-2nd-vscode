@@ -30,10 +30,10 @@ public class DirTree3 extends JFrame {
 
     public static final String APP_NAME = "Directories Tree";
 
-    public static final ImageIcon ICON_COMPUTER = new ImageIcon( "computer.gif" );
-    public static final ImageIcon ICON_DISK = new ImageIcon( "disk.gif" );
-    public static final ImageIcon ICON_FOLDER = new ImageIcon( "folder.gif" );
-    public static final ImageIcon ICON_EXPANDEDFOLDER = new ImageIcon( "expandedfolder.gif" );
+    public static final ImageIcon ICON_COMPUTER = IconLoader.loadIcon( "icons/computer.gif" );
+    public static final ImageIcon ICON_DISK = IconLoader.loadIcon( "icons/disk.gif" );
+    public static final ImageIcon ICON_FOLDER = IconLoader.loadIcon( "icons/folder.gif" );
+    public static final ImageIcon ICON_EXPANDEDFOLDER = IconLoader.loadIcon( "icons/expandedfolder.gif" );
 
     protected JTree m_tree;
     protected DefaultTreeModel m_model;
@@ -90,7 +90,7 @@ public class DirTree3 extends JFrame {
                 return null;
             }
         };
-        
+
         ToolTipManager.sharedInstance().registerComponent( m_tree ); // important
 
         m_tree.putClientProperty( "JTree.lineStyle", "Angled" );
@@ -445,7 +445,7 @@ class FileNode {
         if ( files == null )
             return true;
 
-        Vector v = new Vector();
+        Vector<FileNode> v = new Vector<>();
 
         for ( int k = 0; k < files.length; k++ ) {
             File f = files[k];
@@ -474,7 +474,7 @@ class FileNode {
             parent.add( node );
 
             if ( nd.hasSubDirs() )
-                node.add( new DefaultMutableTreeNode( new Boolean( true ) ) );
+                node.add( new DefaultMutableTreeNode( Boolean.valueOf( true ) ) );
         }
 
         return true;
@@ -496,11 +496,14 @@ class FileNode {
     }
 
     protected File[] listFiles() {
-        if ( !m_file.isDirectory() )
+        if ( !m_file.isDirectory() ) {
             return null;
+        }
+
         try {
             return m_file.listFiles();
-        } catch ( Exception ex ) {
+        } 
+        catch ( Exception ex ) {
             JOptionPane.showMessageDialog( null, "Error reading directory " + m_file.getAbsolutePath(),
                     DirTree3.APP_NAME, JOptionPane.WARNING_MESSAGE );
             return null;
