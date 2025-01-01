@@ -71,6 +71,7 @@ public class StocksTable1 extends JFrame {
     public static void main( String argv[] ) {
         StocksTable1 frame = new StocksTable1();
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+        frame.setLocationRelativeTo( null );
         frame.setVisible( true );
     }
 }
@@ -130,7 +131,7 @@ class StockTableData extends AbstractTableModel {
     public StockTableData() {
         m_frm = new SimpleDateFormat( "MM/dd/yyyy" );
         m_vector = new Vector<StockData>();
-        setDefaultData();
+        this.setDefaultData();
     }
 
     public void setDefaultData() {
