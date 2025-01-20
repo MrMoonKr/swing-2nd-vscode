@@ -29,7 +29,7 @@ $ code --version
 ## 메이븐 프로젝트 초기화
 
 - 메이븐 랩퍼 설치
-- 타입 옵션으로 bin, source, script, only-script 가능능
+- 타입 옵션으로 bin, source, script, only-script 가능
 - only-script 명령어어
   ```
   $ mvn wrapper:wrapper
